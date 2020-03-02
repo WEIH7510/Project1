@@ -1,10 +1,12 @@
 body{
     background-color: aliceblue;
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    
 }
-#head{
-    width: 1000px;
-    height: 500px;
-}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -36,4 +38,14 @@ li a:hover:not(.active) {
 
 .active {
     background-color: #4CAF50;
+}
+h3{
+    color: white;
+}
+#head .show{
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    color: white;
 }
