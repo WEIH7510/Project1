@@ -35,7 +35,39 @@ li a {
 li a:hover:not(.active) {
     background-color: #111;
 }
+.repeat-img{
+	width: 1000px;
+	height: 300px;
+	overflow: hidden;
+	margin: auto;
+}
+.repeat-img ul{
+	list-style: none;
+    width: 400%;
+    height: 100%;
+    animation: picmove 20s linear infinite forwards alternate; /*控制图片移动的总时间*/
+    						/*第一个参数表示自始至终速度一致，第二个参数无限循环播放，第三个动画结束后，使用当前的效果，
+    						第四个参数奇数次反向播放，偶数次正向播放*/    
+}
+.repeat-img ul:hover{
 
+    animation-play-state: paused;
+         
+ }
+
+ @keyframes picmove {
+    from {
+        transform: translate(-2500px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+.repeat-img img{
+	width: 500px;
+	height: 300px;
+	float: left;
+}
 .active {
     background-color: #4CAF50;
 }
