@@ -1,0 +1,81 @@
+body{
+    background-color: thistle;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.repeat-img{
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	margin: auto;
+}
+.repeat-img ul{
+	list-style: none;
+    width: 400%;
+    height: 100%;
+    animation: picmove 20s linear infinite forwards alternate; /*控制图片移动的总时间*/
+    						/*第一个参数表示自始至终速度一致，第二个参数无限循环播放，第三个动画结束后，使用当前的效果，
+    						第四个参数奇数次反向播放，偶数次正向播放*/    
+}
+.repeat-img ul:hover{
+
+    animation-play-state: paused;
+         
+ }
+
+ @keyframes picmove {
+    from {
+        transform: translate(-2500px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+.repeat-img img{
+	width: 500px;
+	height: 400px;
+	float: left;
+}
+
+.images img{
+    width:250px;
+    height: 300px;
+}
+
+.content p{
+    padding: 20px;
+}
+
+.images2 img{
+    width: 250px;
+    height: 400px;
+    
+}
