@@ -69,15 +69,19 @@ li a:hover:not(.active) {
     width:250px;
     height: 300px;
 }
-
-.content p{
-    padding: 20px;
+#pictures{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-
-.images2 img{
-    width: 250px;
+.brush{
+    width: 200px;
     height: 400px;
-    
+}
+.brush img{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
 }
 
 @media (max-width: 600px){
@@ -108,26 +112,21 @@ li a:hover:not(.active) {
     li a:hover:not(.active) {
         background-color: #111;
     }
-    .images{
+
+    #pictures{
         display: flex;
         flex-direction: column;
-        align-items: center;
-   } 
-   .repeat-img img{
-       width: 20%;
-   }
-   .images2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   }
-
-   @keyframes picmove {
-    from {
-        transform: translate(-1000px);
+        align-items:center;
     }
-    to {
-        transform: translate(0);
+    .repeat-img img{
+        width:20%;
     }
-   }
+    @keyframes picmove {
+        from {
+            transform: translate(-1500px);
+        }
+        to {
+            transform: translate(0);
+        }
+    }
 }

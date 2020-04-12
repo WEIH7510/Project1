@@ -70,14 +70,9 @@ li a:hover:not(.active) {
     height: 300px;
 }
 
-.content p{
-    padding: 20px;
-}
-
-.images2 img{
-    width: 250px;
-    height: 400px;
-    
+.links img{
+    width: 30%;
+    height: 30%;
 }
 
 @media (max-width: 600px){
@@ -108,26 +103,18 @@ li a:hover:not(.active) {
     li a:hover:not(.active) {
         background-color: #111;
     }
-    .images{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-   } 
-   .repeat-img img{
-       width: 20%;
-   }
-   .images2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   }
+    
+    .repeat-img img{
+        width: 20%;
+    }
 
-   @keyframes picmove {
-    from {
-        transform: translate(-1000px);
+    @keyframes picmove {
+        from {
+            transform: translate(-1100px);
+        }
+        to {
+            transform: translate(0);
+        }
     }
-    to {
-        transform: translate(0);
-    }
-   }
+
 }
