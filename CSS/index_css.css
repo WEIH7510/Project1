@@ -82,6 +82,13 @@ h3{
     color: white;
 }
 
+#form{
+    margin: 0 auto;
+    align-items: center;
+    width: 500px;
+
+}
+
 @media (max-width: 600px){
     ul {
         margin: 0;
@@ -132,6 +139,8 @@ h3{
             transform: translate(0);
         }
     }
-    
+    #form{
+        width: 100%;
+    }
 
 }

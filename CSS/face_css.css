@@ -44,7 +44,7 @@ li a:hover:not(.active) {
 }
 
 #show-re .title{
-    width: 1000;
+    width: 1000px;
     height: 400px;
     
     display: flex;
@@ -54,7 +54,7 @@ li a:hover:not(.active) {
 #show-re .F{
     
    /* border-color: rgb(190, 135, 197); */
-    width: 1000;
+    width: 1000px;
     height:250px;
     display: flex;
     font-family: cursive;
@@ -168,7 +168,7 @@ li a:hover:not(.active) {
         display: flex;
         font-family: cursive;
         font-size: small;
-        margin-left: none;
+        
     }
 
     
