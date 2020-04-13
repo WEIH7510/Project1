@@ -111,8 +111,11 @@ body{
         height:300px;
         display: flex;
         font-family: cursive;
-        font-size: small;
-        
+        font-size: small; 
+    }
+
+    #show-re .Fwhole .F img{
+        width: 30%;
     }
 
     
